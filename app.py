@@ -1,5 +1,3 @@
-
-
 from flask import Flask, render_template, Response
 import cv2
 import face_recognition
@@ -7,13 +5,13 @@ import numpy as np
 app=Flask(__name__)
 camera = cv2.VideoCapture(0)
 # Load a sample picture and learn how to recognize it.
-krish_image = face_recognition.load_image_file("Aman.jpg")
+krish_image = face_recognition.load_image_file("Photos/Aman.jpg")
 krish_face_encoding = face_recognition.face_encodings(krish_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-bradley_image = face_recognition.load_image_file("bradley.jpg")
+bradley_image = face_recognition.load_image_file("Photos/sreyas.jpg")
 bradley_face_encoding = face_recognition.face_encodings(bradley_image)[0]
-
+# Main
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     krish_face_encoding,
@@ -21,7 +19,7 @@ known_face_encodings = [
 ]
 known_face_names = [
     "Aman",
-    "Bradly"
+    "sreyas"
 ]
 # Initialize some variables
 face_locations = []
