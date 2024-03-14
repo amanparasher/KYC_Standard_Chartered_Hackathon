@@ -34,7 +34,15 @@ git clone https://github.com/amanparasher/KYC_Standard_Chatterd_Hackathon.git
 Navigate to the folder you have saved this project in.     
     
 To run "login.html" in this project, use live server extension to run login.html.     
-       
+
+## Demo Video
+
+
+
+https://github.com/amanparasher/KYC_Standard_Chartered_Hackathon/assets/98343580/b061a486-93e2-4233-968d-a6f6b35d89d5
+
+
+
 ## Contributors
 Aman Parasher - https://github.com/amanparasher        
         
