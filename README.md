@@ -14,8 +14,10 @@ All technologies required are given in requirements.txt.
 Do this with installing by running these or this in terminal or cmd.      
 ```
 pip install -r requirements.txt
-```  
-or     
+``` 
+       
+or  
+         
 ```
 pip install opencv-python
 ```
