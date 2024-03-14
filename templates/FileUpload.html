@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Uploader</title>
+    <script>
+        function callDelayedAlert(msg) {
+            setTimeout(function() {
+                alert(msg);
+            }, 5000); // 4000 milliseconds = 4 seconds
+        }
+
+        // Call the function with your desired message
+        callDelayedAlert("Your Document has been verified succesfully. You can now proceed for e-KYC");
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,7 +85,8 @@
         <form enctype="multipart/form-data">
             <input type="file" name="file" id="file" class="inputfile" />
             <label for="file">Choose a file...</label>
-            <button type="submit"><a href="/Frontend/public/page1.html">Upload</a></button>
+            <button type="submit" id="popupButton" onclick="callAlert('Succesfully Verified')">Verify</button>
+            <button type="submit" ><a href="http://127.0.0.1:5000">e-KYC</a></button>
         </form>
         <select>
             <option value="id1">Aadhar Card</option>
