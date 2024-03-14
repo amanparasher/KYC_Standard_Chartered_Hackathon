@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC app</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="../Frontend/style/sstyle.css">
 </head>
 <body>
     <div class="container">
@@ -13,7 +14,7 @@
             <img id="video_feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
         </div>
         <button>
-            <a href="/templates/finalpage.html">Proceed</a>
+            <a class="btn-contact btn-menubar lg-hidden" href="/templates/finalpage.html">Proceed</a>
         </button>
     </div>
 </body>

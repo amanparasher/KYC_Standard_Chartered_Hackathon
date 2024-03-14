@@ -5,7 +5,7 @@ import numpy as np
 app=Flask(__name__)
 camera = cv2.VideoCapture(0)
 # Load a sample picture and learn how to recognize it.
-krish_image = face_recognition.load_image_file("Krish/krish.jpg")
+krish_image = face_recognition.load_image_file("Photos/devaj.jpeg")
 krish_face_encoding = face_recognition.face_encodings(krish_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
@@ -18,7 +18,7 @@ known_face_encodings = [
     bradley_face_encoding
 ]
 known_face_names = [
-    "Aman",
+    "Devaj",
     "Sreyas"
 ]
 # Initialize some variables
