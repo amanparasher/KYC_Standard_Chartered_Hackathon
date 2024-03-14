@@ -1,3 +1,5 @@
+alert("Already Loaded")
+
 let Doc = document.getElementById("file-upload")
 const inputFile = document.getElementById("file-upload")
 

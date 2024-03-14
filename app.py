@@ -5,7 +5,7 @@ import numpy as np
 app=Flask(__name__)
 camera = cv2.VideoCapture(0)
 # Load a sample picture and learn how to recognize it.
-krish_image = face_recognition.load_image_file("Photos/devaj.jpeg")
+krish_image = face_recognition.load_image_file("Photos/Aman.jpg")
 krish_face_encoding = face_recognition.face_encodings(krish_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
@@ -18,7 +18,7 @@ known_face_encodings = [
     bradley_face_encoding
 ]
 known_face_names = [
-    "Devaj",
+    "Aman",
     "Sreyas"
 ]
 # Initialize some variables
@@ -84,5 +84,12 @@ def index():
 @app.route('/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+# @app.route('/')
+# def last_page():
+#     return render_template('lastpage.html')
+
+
 if __name__=='__main__':
     app.run(debug=True)
+

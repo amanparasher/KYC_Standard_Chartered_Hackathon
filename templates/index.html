@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="../Frontend/style/sstyle.css">
 </head>
+<style>
+    .btnsq{
+        background: #ffffff;
+        /* box-shadow: 2px; */
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+    }
+</style>
 <body>
     <div class="container">
         <h1>KYC app</h1>
@@ -14,7 +23,7 @@
             <img id="video_feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
         </div>
         <button>
-            <a class="btn-contact btn-menubar lg-hidden" href="/templates/finalpage.html">Proceed</a>
+            <a class="btnsq" href="http://127.0.0.1:5500/templates/lastpage.html">Proceed</a>
         </button>
     </div>
 </body>
