@@ -7,7 +7,7 @@ IDVault is our Know Your Customer (KYC) project which aims to develop a robust s
 1) Document scanning using OCR.
 2) Face recognition using opencv.
 3) OAuth using Google.
-4) Easy and instant verification in application.
+4) Easy and instant verification in application. 
        
 ## Prerequisites          
 All technologies required are given in requirements.txt.       
